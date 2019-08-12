@@ -1,0 +1,35 @@
+<form #myForm="ngForm" (ngSubmit)="submitForm(myForm.value)">
+
+<div>
+    <label for="firstname">First Name : </label>
+    <input type="text" name="firstname" ngModel> 
+</div>
+
+
+<div>
+    <label for="lastname">Last Name : </label>
+    <input type="text" name="lastname" ngModel> 
+</div>
+
+
+    <div ngModelGroup="address"> Address: <br>
+
+        <div><label for="city">City: </label>
+            <input type="text" name="city" ngModel> </div>
+
+        <div> <label for="pincode"> Pin Code :</label>
+            <input type="text" name="pincode" ngModel> </div>
+
+        <div> <label for="streetNo">Street No : </label>
+            <input type="text" name="streetNo" ngModel>  </div>
+
+    </div>
+
+
+
+<div>
+    
+    <button type="submit">Submit</button>
+</div>
+
+</form>
